@@ -1,0 +1,19 @@
+def slidingMaximum(arr,k):
+		N = len(arr)
+		ans = [] 
+
+		if N < k:
+			return -1
+		max_ele = max(arr[:k])
+		ans.append(max_ele)
+		start = 1
+		end = k+1
+		for i in range(N-k):
+			max_ele = max(arr[start:end])
+			ans.append(max_ele)
+			start+=1
+			end+=1
+		return ans
+arr = [16, 12, 9, 19, 11, 8]
+k = 3
+print(slidingMaximum(arr, k))
