@@ -27,6 +27,6 @@ def maxSum(arr, k):
 	return max_sum, li
 
 
-arr = [16, 12, 9, 19, 11, 8]
+arr = [16, 12, 9, 19, 11, 7]
 k = 3
 print(maxSum(arr, k))
